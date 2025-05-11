@@ -36,7 +36,7 @@ export default function ExperienceCard() {
                             whileInView={{ height: "100%" }}
                             transition={{ duration: 1, ease: "easeInOut" }}
                             viewport={{ once: true }}
-                            className="hidden md:block absolute left-1/2 top-0 h-full w-1 bg-gradient-to-b from-purple-400 to-pink-500 transform -translate-x-1/2"
+                            className="hidden md:block absolute left-1/2 top-0 h-full w-1 bg-gradient-to-r from-transparent via-violet-500 to-transparent transform -translate-x-1/2"
                         />
                         {/* ซ้าย */}
                         <div className={`w-full md:w-5/12  ${isLeft ? "" : "hidden md:block"}`}>

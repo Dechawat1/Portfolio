@@ -12,6 +12,10 @@ export const links = [
         href: "#projects",
     },
     {
+        label: "Skills",
+        href: "#skills",
+    },
+    {
         label: "Contact",
         href: "#contact",
     },
