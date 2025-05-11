@@ -17,5 +17,6 @@ export const skillsData = [
   'tailwind',
   'c#',
   'flutter',
-  'dart'
+  'dart',
+  'prisma'
 ]

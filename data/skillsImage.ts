@@ -83,7 +83,7 @@ import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
 import fastapi from '../app/assets/svg/skills/fastapi.svg'
 import nodejs from '../app/assets/svg/skills/node-js.svg'
 import express from '../app/assets/svg/skills/express.svg'
-
+import prisma from '../app/assets/svg/skills/prisma-2.svg'
 
 export const skillsImage = (skill: string) => {
   const skillID = skill.toLowerCase();
@@ -256,6 +256,8 @@ export const skillsImage = (skill: string) => {
       return nodejs;
     case 'express':
       return express;
+    case 'prisma':
+      return prisma;
     default:
       break;
   }
