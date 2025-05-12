@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Link from 'next/link';
 import SkillTag from './SkillTag';
 
@@ -13,6 +13,7 @@ interface ProjectProps {
     image: string;
     live: string;
     github: string;
+    figma: string;
 }
 
 const ProjectCard: React.FC<{ project: ProjectProps }> = ({ project }) => {
@@ -67,6 +68,11 @@ const ProjectCard: React.FC<{ project: ProjectProps }> = ({ project }) => {
                     {project.github && (
                         <Link href={project.github} target='_blank' className="p-2 w-18 font-semibold text-center rounded-2xl hover:scale-110 transition-transform duration-300 bg-gradient-to-r from-gray-800 to-gray-900 text-purple-300">
                             Github
+                        </Link>
+                    )}
+                    {project.figma && (
+                        <Link href={project.figma} target='_blank' className="text-center p-2 w-18 font-semibold rounded-2xl hover:scale-110 transition-transform duration-300 bg-gradient-to-r from-purple-600 to-pink-600">
+                            Figma
                         </Link>
                     )}
                 </div>

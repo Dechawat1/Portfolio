@@ -1,11 +1,11 @@
 import React from 'react';
 import {
-    FaReact, FaNodeJs, FaVuejs, FaAngular, FaSass, FaGitAlt, FaDocker,FaDatabase 
+    FaReact, FaNodeJs, FaVuejs, FaAngular, FaSass, FaGitAlt, FaDocker, FaDatabase
 } from 'react-icons/fa';
 import {
     SiTailwindcss, SiExpress, SiPrisma, SiMysql, SiPostgresql, SiMongodb,
     SiNestjs, SiDjango, SiLaravel, SiRedis, SiGraphql, SiRedux, SiNextdotjs,
-    SiFlutter, SiDart, SiFirebase, SiDotnet,
+    SiFlutter, SiDart, SiFirebase, SiDotnet, SiTypescript, SiSupabase
 } from 'react-icons/si';
 
 interface SkillTagProps {
@@ -86,6 +86,11 @@ const SkillTag: React.FC<SkillTagProps> = ({ name, type = 'other' }) => {
                 return 'bg-blue-400/30 hover:bg-blue-400/50';
             case 'git':
                 return 'bg-orange-600/30 hover:bg-orange-600/50';
+            case 'typescript':
+            case 'ts':
+                return 'bg-blue-600/30 hover:bg-blue-600/50';
+            case 'supabase':
+                return 'bg-green-600/30 hover:bg-green-600/50';
 
             default:
                 return 'bg-gray-500/30 hover:bg-gray-500/50';
@@ -136,7 +141,7 @@ const SkillTag: React.FC<SkillTagProps> = ({ name, type = 'other' }) => {
                 return <SiDotnet className="mr-2" />;
             case 'mssql':
             case 'sql server':
-                return <FaDatabase  className="mr-2" />;
+                return <FaDatabase className="mr-2" />;
 
             case 'prisma':
                 return <SiPrisma className="mr-2" />;
@@ -156,6 +161,11 @@ const SkillTag: React.FC<SkillTagProps> = ({ name, type = 'other' }) => {
                 return <FaDocker className="mr-2" />;
             case 'git':
                 return <FaGitAlt className="mr-2" />;
+            case 'typescript':
+            case 'ts':
+                return <SiTypescript className="mr-2" />;
+            case 'supabase':
+                return <SiSupabase className="mr-2" />;
 
             default:
                 return null;
