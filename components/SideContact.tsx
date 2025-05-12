@@ -13,13 +13,13 @@ export default function SideContact() {
       </div>
       {/* icons */}
       <div className='text-text flex flex-col gap-2 items-center mt-2'>
-        <Link target='_blank' href={'https://www.facebook.com/'}>
+        <Link target='_blank' href={'https://www.facebook.com/icedechawat.net'}>
           <FaFacebookSquare size={24} className='bg-white text-blue-600 rounded-sm hover:scale-105' title='Facebook'/>
         </Link>
-        <Link target='_blank' href={'https://www.instagram.com/'}>
+        <Link target='_blank' href={'https://www.instagram.com/icedcwnk_/'}>
           <FiInstagram size={24} className='bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-md hover:scale-105' title='Instagram'/>
         </Link>
-        <Link target='_blank' href={'https://line.me/ti/p/'}>
+        <Link target='_blank' href={'https://line.me/ti/p/Skc_GjCgmv'}>
           <FaLine size={24} className='text-green-600 bg-white rounded-md hover:scale-105' title='Line'/>
         </Link>
 
