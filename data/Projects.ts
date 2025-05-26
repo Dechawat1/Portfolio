@@ -21,7 +21,7 @@ export const projects = [
         title: "Windows Application KU FAIR C#",
         description: "แอปพลิเคชันสำหรับการจัดการงานภายในมหาวิทยาลัยเกษตรศาสตร์ โดยใช้ C# และ SQL Server เป็นฐานข้อมูล.",
         language: [
-            { name: "csharp", type: "frontend" },
+            { name: "C#", type: "frontend" },
             { name: "Mssql", type: "backend" },
         ],
         image: "/images/project2.png",
@@ -73,6 +73,19 @@ export const projects = [
         image: "/images/project5.png",
         live: "",
         github: "https://github.com/Dechawat1/Camping-NextJs",
+        figma: ""
+    },
+    {
+        id: 6,
+        title: "ManageProducts",
+        description: "Windows Application ด้วยFramework   ภาษา C#.NET ระบบจัดการข้อมูลสินค้า ประกอบด้วยฟังก์ชั่น เมนูรับเข้า เมนูจ่ายออกสินค้า โดยเขียนเรียกใช้งานฟังก์ชั่นรับเข้า จ่ายออก  เชื่อมต่อฐานช้อมูล Microsoft SQL Server ทำระบบ CRUD ด้วย API ให้Fontend เรียกใช้งาน.",
+        language: [
+            { name: "C#", type: "frontend" },
+            { name: "MSSQL", type: "backend" },
+        ],
+        image: "/images/project6.png",
+        live: "",
+        github: "https://github.com/Dechawat1/ManageProduct/tree/main",
         figma: ""
     }
 ]
